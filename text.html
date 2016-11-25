@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>标题</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<style>
+	body{
+		background-color: yellow;
+	}
+	#out{
+		width: 100vw;
+		height: 10vh;
+		background-color: red;
+		visibility:hidden;
+	}
+	#in{
+		width: 100%;
+		font-size: 1vw;
+		background-color: yellow;
+		visibility: visible;
+	}
+
+	p{
+		border: 10px solid transparent;
+		border-radius: 5px;
+		background-color: red;
+		background-origin: border-box;
+	}
+	</style>
+</head>
+<body>
+	<div id="out">
+		<div id="in">
+			你好
+		</div>
+	</div>
+
+	<p style="z-index:999;">
+		dasdsadaddddddddddd
+	</p>
+	<p style="z-index:99;">
+		dasdsadaddddddddddd
+	</p>
+
+</body>
+</html>
