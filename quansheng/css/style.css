@@ -1,0 +1,1230 @@
+/*首页导航部分*/
+#shouye_header{
+	min-width: 1366px;
+	margin: 0 auto;
+	height: 90px;
+	overflow: hidden;
+	background-color: #fff;
+	position: fixed;  
+	/*顶部导航拦固定在浏览器上部*/
+	top: 0px;
+	left: 50%;
+	margin-left: -683px;
+	z-index: 1000000;
+}
+
+/*首页logo定位*/
+#shouye_logo{
+	display: inline-block;
+	margin-left: 112px;
+	margin-top: 26px;
+}
+
+/*首页导航条*/
+#shouye_nav{
+	float: right;
+}
+
+#shouye_nav ul{
+	overflow: hidden;
+}
+
+/*首页导航列表项目*/
+.shouye_nav_list{
+	width: 84px;
+	height: 84px;
+	float: left;
+	position: relative;
+	text-align: center;
+	background-color: #898989;
+	margin-left: 2px;
+	cursor: pointer;
+}
+
+/*设置背景图片*/
+.shouye_nav_list div{
+	width: 41px;
+	height: 32px;
+	position: absolute;
+	top:20px;
+	left:22px;
+	
+}
+
+/*鼠标放在导航列表项目上，背景颜色变红*/
+.shouye_nav_list:hover{
+	background-color: #c2191f;
+}
+
+/*鼠标放在导航列表项目上，链接文字颜色为白色，出现下划线*/
+.shouye_nav_list:hover a{
+	text-decoration: underline;
+	color: #fff;
+
+}
+
+/*背景图片定位*/
+#shouye_nav_list1{
+	background: url(../img/shouye/nav.png) 0px -1px no-repeat;
+}
+
+/*鼠标放在导航列表项目上，背景图片位置变化*/
+.shouye_nav_list:hover #shouye_nav_list1{
+	top: 22px;
+	background: url(../img/shouye/nav.png) 0px -56px no-repeat;
+}
+
+#shouye_nav_list2{
+	background: url(../img/shouye/nav.png) -67px -2px no-repeat;
+}
+
+.shouye_nav_list:hover #shouye_nav_list2{
+	top: 22px;
+	background: url(../img/shouye/nav.png) -67px -56px no-repeat;
+}
+
+#shouye_nav_list3{
+	background: url(../img/shouye/nav.png) -133px -2px no-repeat;
+}
+
+.shouye_nav_list:hover #shouye_nav_list3{
+	top: 22px;
+	background: url(../img/shouye/nav.png) -133px -56px no-repeat;
+}
+
+#shouye_nav_list4{
+	background: url(../img/shouye/nav.png) -212px -2px no-repeat;
+}
+
+.shouye_nav_list:hover #shouye_nav_list4{
+	top: 22px;
+	background: url(../img/shouye/nav.png) -212px -56px no-repeat;
+}
+
+#shouye_nav_list5{
+	background: url(../img/shouye/nav.png) -282px -2px no-repeat;
+}
+
+.shouye_nav_list:hover #shouye_nav_list5{
+	top: 22px;
+	background: url(../img/shouye/nav.png) -282px -56px no-repeat;
+}
+
+#shouye_nav_list6{
+	background: url(../img/shouye/nav.png) -355px -2px no-repeat;
+}
+
+.shouye_nav_list:hover #shouye_nav_list6{
+	top: 22px;
+	background: url(../img/shouye/nav.png) -355px -56px no-repeat;
+}
+
+#shouye_nav_list7{
+	width: 52px;
+	left:15px;
+	background: url(../img/shouye/nav.png) -423px -2px no-repeat;
+}
+
+.shouye_nav_list:hover #shouye_nav_list7{
+	top: 22px;
+	background: url(../img/shouye/nav.png) -423px -56px no-repeat;
+}
+
+#shouye_nav_list8{
+	background: url(../img/shouye/nav.png) -503px -4px no-repeat;
+}
+
+.shouye_nav_list:hover #shouye_nav_list8{
+	top: 22px;
+	background: url(../img/shouye/nav.png) -503px -60px no-repeat;
+}
+
+/*导航链接定位*/
+.shouye_nav_list a:before{
+	content: "";
+	display: block;
+	height: 56px;
+	visibility: hidden;
+}
+
+/*导航链接*/
+.shouye_nav_list a{
+	font-size: 12px;
+	color: #c5c5c6;
+	display: inline-block;
+	padding-bottom: 20px;
+}
+
+/*首页内容部分*/
+#shouye_content{
+	width: 1366px;
+	margin: 0 auto;
+	margin-top: 90px;
+}
+
+/*首页大图展示*/
+#datu_01{
+	min-width: 1366px;
+	float: left;
+}
+
+/*首页主体*/
+#shouye_contain{
+	width: 1366px;
+	margin: 0 auto;
+	clear: both;
+	overflow: hidden;
+}
+
+/*下拉菜单*/
+#drop_down{
+	clear: both;
+}
+
+.drop_down_list{
+	width: 226px; 
+	height: 65px;
+	float: left;
+	position: relative;  
+	/*相对定位，为子元素构造下拉效果*/
+	text-align: center;
+	font-size: 18px;
+	border-left: 1px solid #cdcdce;
+	border-top: 2px solid #cdcdce;
+	border-bottom: 2px solid #cdcdce;
+	background-color: #fff;
+	z-index: 2;
+}
+
+/*鼠标放在下拉列表,颜色和边框变红*/
+.drop_down_list:hover{
+	background-color: #c2191f;
+	border-color: #c2191f;
+}
+
+/*鼠标放在下拉列表,下拉列表内容出现*/
+.drop_down_list:hover .dorp_down_content{
+	display: block;
+}
+
+.drop_down_list span{
+	display: inline-block;
+	height: inherit;
+	line-height: 65px;
+	color: #000;
+	overflow: hidden;
+}
+
+/*下拉列表内容*/
+.dorp_down_content{
+	position: absolute;
+	display: none;
+	width: inherit;
+	top: 67px;
+	left: 0px;
+	background-color: #eee6e2;
+	padding-bottom: 20px;
+	z-index: 99;
+}
+
+.dorp_down_content a{
+	font-size: 16px;
+	color: #888888;
+	text-decoration: none;
+}
+
+/*鼠标交互,颜色变红*/
+.dorp_down_content a:hover{
+	color:red;
+}
+
+.dorp_down_content h3{
+	position: relative;
+	width: inherit;
+	height: 56px;
+	line-height: 56px;
+	text-align: left;
+	padding: 0 30px;
+	font-size: 20px;
+	color: #898989;
+	font-weight: lighter;
+}
+
+/*下拉列表左侧内容列表*/
+.dorp_down_content .left_list{
+	width: 85px;
+	height: 24px;
+	line-height: 24px;
+	text-align: left;
+	border-right: 2px solid #d0000e;
+	padding-left: 30px;
+	padding-right: 10px;
+}
+
+.dorp_down_content .left_list:hover{
+	border-color: transparent;
+}
+
+/*鼠标放在下拉列表左侧内容列表,右侧列表显示*/
+.dorp_down_content .left_list:hover .list_hidden{
+	display: block;
+}
+
+.list_hidden{
+	position: absolute;
+	display: none;
+	top: 56px;
+	right: 15px;
+	height: 200px;
+	overflow: auto;
+
+}
+
+.list_hidden a{
+	display: block;
+	height: 24px;
+	width: 100px;
+	text-align: right;
+	line-height: 24px;
+	top: 56px;
+	right: 15px;
+}
+
+
+
+/*企业介绍*/
+#shouye_jituan{
+	width: inherit;
+	height: 467px;
+	background: url(../img/shouye/beijing2.png) center center no-repeat;
+	overflow: hidden;
+}
+
+/*媒体介绍*/
+#jituan_media{
+	width: 834px;
+	height: inherit;
+	float: left;
+	position: relative;
+}
+
+#jituan_media img{
+	display: inline-block;
+	width: 496px;
+	height: 298px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -149px;
+	margin-left: -248px;
+}
+
+/*文字介绍*/
+#jituan_text{
+	width: 532px;
+	height: inherit;
+	float: left;
+	position: relative;
+	background-color: #e4e5e5;
+	opacity: 0.7;
+	filter:alpha(opacity=70);
+}
+
+#jituan_title{
+	position: absolute;
+	top: 50px;
+	right: 128px;
+	width: 256px;
+	height: 48px;
+	text-align: right;
+	color: #000;
+	border-right: 6px solid #d0000e;
+	padding-right: 8px;
+}
+
+#jituan_title h2{
+	color: #000;
+	font-size: 28px;
+	font-weight: lighter;
+}
+
+#jituan_title p{
+	margin-top: 5px;
+	font-size: 16px;
+}
+
+#jianjie{
+	position: absolute;
+	width: 277px;
+	font-size: 14px;
+	line-height: 16px;
+	text-indent: 2em;
+	top: 150px;
+	right: 128px;
+}
+
+/*全盛业务*/
+#shouye_yewu{
+	height: 640px;
+	background-color: #fff;
+	position: relative;
+}
+
+/*标题*/
+#shouye_yewu_title{
+	position: absolute;
+	top: 50px;
+	left: 226px;
+	width: 256px;
+	height: 48px;
+	text-align: left;
+	color: #000;
+	border-left: 6px solid #d0000e;
+	padding-left: 8px;
+}
+
+#shouye_yewu_title h2{
+	color: #000;
+	font-size: 28px;
+	font-weight: lighter;
+}
+
+#shouye_yewu_title p{
+	margin-top: 5px;
+	font-size: 16px;
+}
+
+#yewu_zhanshi{
+	position: absolute;
+/*	width: 910px;*/
+	top: 140px;
+	left: 50%;
+	margin-left: -550px;
+	overflow: hidden;
+	background: url(../img/shouye/left1.png) 0px center no-repeat;
+	
+}
+
+#yewu_zhanshi_lists{
+	width: 910px;
+	padding-left: 100px;
+	padding-right: 100px;
+	background: url(../img/shouye/right1.png) right center no-repeat;
+}
+
+/*业务列表*/
+.yewu_lists{
+	width: auto;
+	margin-left: -66px;
+	overflow: hidden;
+}
+
+.yewu_list{
+	float: left;
+	margin-left: 66px;
+}
+
+.yewu_list h2{
+	width: 257px;
+	height: 84px;
+	background-color: #a3a4a4;
+	text-align: center;
+	line-height: 84px;
+	font-size: 24px;
+	color: #fff;
+	border: 1px solid #b6b7b8;
+}
+
+.yewu_list img{
+	width: 257px;
+	height: 184px;
+	border-left: 1px solid #b6b7b8;
+	border-right: 1px solid #b6b7b8;
+}
+
+/*业务展示*/
+.zhanshi_info{
+	width: 257px;
+/*	height: 124px;*/
+	margin-top: -3px;
+	padding-bottom: 24px;
+	text-align: center;
+	background-color: #a3a4a4;
+	border: 1px solid #b6b7b8;
+}
+
+.zhanshi_info p{
+	width: 200px;
+	height: 60px;
+	text-overflow:ellipsis;
+	overflow: hidden;
+	margin: 0 auto;
+	padding-top: 25px;
+	padding-bottom: 30px;
+	font-size: 12px;
+	line-height: 16px;
+	text-align: left;
+	text-indent: 2em;
+	color: #fff;
+}
+
+.zhanshi_info a{
+	display: inline-block;
+	width: 75px;
+	height: 18px;
+	line-height: 18px;
+	color: #fff;
+	font-size: 12px;
+	border: 2px solid #fff;
+	border-radius: 9px;
+}
+
+/*新闻动态*/
+#shouye_news{
+	background-color: #807f80;
+	overflow: hidden;
+	position: relative;
+}
+
+/*左上按钮*/
+#lt{
+	position: absolute;
+	top: 440px;
+	left: 83px;
+	z-index: 100;
+}
+
+/*左下按钮*/
+#lb{
+	position: absolute;
+	top: 480px;
+	left: 83px;
+	z-index: 100;
+}
+
+/*右上按钮*/
+#rt{
+	position: absolute;
+	top: 440px;
+	right: 83px;
+	z-index: 100;
+}
+
+/*右下按钮*/
+#rb{
+	position: absolute;
+	top: 480px;
+	right: 83px;
+	z-index: 100;
+}
+
+.line_tile{
+/*	height: 100px;*/
+	position: relative;
+	margin-left: 157px;
+	padding-top: 60px;
+	padding-bottom: 10px;
+	font-size: 26px;
+	color: #fff;
+	border-bottom: 5px solid #d0000e;
+
+}
+
+.line_tile:before{
+	display: block;
+	position: absolute;
+	top: 65px;
+	left: -45px;
+	content: "";
+	width: 35px;
+	height: 30px;
+/*	background: url(../img/shouye/news.png) center center no-repeat;*/
+	border: none;
+}
+
+/*图标*/
+#shouye_news_title:before{
+	background: url(../img/shouye/news.png) center center no-repeat;
+}
+
+.line_tile span{
+	display: inline-block;
+	margin-left: 1em;
+	font-size: 16px;
+}
+
+/*新闻动态*/
+.new{
+	padding-top: 60px;
+}
+
+/*新闻一*/
+.new1{
+	position: relative;
+	padding-left: 50%;
+	height: 319px;
+	background: #d4d5d5 url(../img/shouye/tu4.png) 0px 0px no-repeat;
+}
+
+.new1 img{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	margin-top: -61px;
+}
+
+.news_title{
+	display: block;
+	margin: 0 auto;
+	padding-top: 64px;
+	padding-bottom: 32px;
+	width: 517px;
+	font-size: 24px;
+	color: #000;
+}
+
+#shouye_news .news_jianjie{
+	width: 517px;
+	margin: 0 auto;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+/*新闻二*/
+.new2{
+	position: relative;
+	padding-right: 50%;
+	height: 319px;
+	background: #d4d5d5 url(../img/shouye/tu5.png) right 0px no-repeat;
+}
+
+.new2 img{
+	position: absolute;
+	top:50%;
+	right: 50%;
+	margin-top: -61px;
+}
+
+/*公司门店*/
+.new3{
+	position: relative;
+	float: left;
+	width: 50%;
+	height: 686px;
+	background: #fff url(../img/shouye/ditu.png) center center no-repeat;
+}
+
+.new3:hover{
+	/*背景变大*/
+}
+
+#new3_title{
+	position: absolute;
+	top: 50px;
+	left: 226px;
+	width: 256px;
+	height: 48px;
+	text-align: left;
+	color: #000;
+	border-left: 6px solid #d0000e;
+	padding-left: 8px;
+}
+
+#new3_title h2{
+	color: #000;
+	font-size: 28px;
+	font-weight: lighter;
+}
+
+#new3_title p{
+	margin-top: 5px;
+	font-size: 16px;
+}
+
+/*公司门店图片展示*/
+.new4{
+	float: left;
+	width: 50%;
+	height: 686px;
+	overflow: hidden;
+}
+
+.new4_list{
+	float: left;
+	position: relative;
+}
+
+/*鼠标悬浮,出现遮罩(文字介绍)*/
+.new4_list:hover .mask{
+	display: block;
+}
+
+.new4_list img{
+	width: 341px;
+	height: 343px;
+}
+
+.mask{
+	position: absolute;
+	display: none;
+	top: 0px;
+	left: 0px;
+	width: 341px;
+	height: 343px;
+	background: url(../img/shouye/shop.jpg) 0px 0px no-repeat;
+}
+
+/*合作伙伴*/
+#shouye_friend{
+	background-color: #807f80;
+	overflow: hidden;
+}
+
+#shouye_friend_title:before{
+	background: url(../img/shouye/partner.png) center center no-repeat;
+}
+
+.partners{
+	width: 100%;
+	background-color: #fff;
+	margin-top: 70px;
+}
+
+.partners ul{
+	width: 800px;
+	margin: 0 auto;
+	padding-top: 20px;
+	overflow: hidden;
+}
+
+.partner{
+	float: left;
+	width: 200px;
+	height: 108px;
+}
+
+/*联系我们*/
+#shouye_contact{
+	height: 160px;
+	background: #e7c273 url(../img/shouye/contast_bg.png) 0px 0px no-repeat;
+}
+
+#shouye_contact_title{
+	color: #c50613;
+}
+
+#shouye_contact_title span{
+	display: inline-block;
+	margin-right: 50px;
+}
+
+#shouye_contact_title strong{
+	display: inline-block;
+	font-size: 30px;
+	margin-left: 50px;
+}
+
+#shouye_contact_title:before{
+	background: url(../img/shouye/tel.png) center center no-repeat;
+}
+
+#shouye_contact a{
+	display: block;
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	margin: 10px auto;
+	border: 2px solid #d47344;
+	border-radius: 30px;
+	background-color: #c50613;
+	color: white;
+	text-align: center;
+}
+
+/*网页底部*/
+.foot{
+	background-color:#fff;
+	
+}
+.footer{
+	width: 1366px;
+	min-width: 1366px;
+	height: 210px;
+	margin: 0 auto;
+/*	overflow: hidden;*/
+}
+
+.footer_line{
+	border-top: 1px solid #dad7d7;
+}
+
+.foot_logo{
+	float: left;
+	width: 195px;
+	height: 48px;
+	margin-top: 80px;
+	margin-left: 110px;
+	padding-right: 40px;
+	border-right: 4px solid #c2191f;
+	background: url(../img/shouye/logo.png) 0 0 no-repeat;
+}
+
+.shengming{
+	float:right;
+	text-align: right;
+	color:#898989;
+	font-size: 16px;
+	padding-right: 86px;
+	margin-right: 20px;
+	overflow: hidden;
+	margin-top: 80px;
+	background: url(../img/shouye/ma.png) right top no-repeat;
+}
+
+.shengming a{
+	color: inherit;
+	font-size: inherit;
+}
+
+.shengming p{
+	margin-top: 8px;
+}
+
+.shengming ul{
+	overflow: hidden;
+	margin-top: 2px;
+
+}
+
+.shengming li{
+	float:right;
+	padding: 0px 14px;
+	border-right: 2px solid #898989;
+}
+
+
+
+
+/*分界面*/
+
+.header{
+	width: 100%;
+	position: relative;
+	background: url(../img/shouye/head_bg.png) center bottom no-repeat;
+}
+
+.header_bg{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	filter: alpha(opacity=10);
+	-moz-opacity: 0.1;
+	opacity: 0.1;
+	z-index: -1;
+}
+
+.header_content{
+	width: 1366px;
+	height: inherit;
+	margin: 0 auto;
+	overflow: hidden;
+/*	padding-bottom: 44px;*/
+	background: 
+}
+
+
+/*logo定位*/
+#logo{
+	display: inline-block;
+	padding-left: 20px;
+	padding-top: 53px;
+}
+
+/*导航条*/
+.nav{
+	float: right;
+	padding-top: 70px;
+	padding-right: 0px;
+}
+
+.nav ul{
+	overflow: hidden;
+}
+
+.web_address_bg{
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 60px;
+	background-color: rgb(127,127,127);
+	filter:alpha(opacity=50);
+	opacity: 0.5;   
+	z-index: 1;
+}
+
+
+.web_address_container{
+	position: relative;
+	margin-top: 64px;
+	color: #fff;
+	height: 60px;
+}
+
+.web_address_text{
+	position: absolute;
+	line-height: 60px;
+	top: 0px;
+	left: 60px;
+	z-index: 1;
+}
+
+
+/*导航列表项目*/
+.nav_list{
+	width: 106px;
+	height: 28px;
+	float: left;
+	font-size: 18px;
+	line-height: 28px;
+	border-bottom: 3px solid #6e6867;
+	text-align: center;
+	cursor: pointer;
+}
+
+.nav_list a{
+	color: #231815;
+	text-decoration: none;
+}
+
+.nav_list:hover{
+	border-color: #d0000e;
+	color: #d0000e;
+}
+
+.nav_list:hover a{
+	color: #d0000e;
+}
+
+
+/*中间内容部分*/
+.contain{
+	width: 1366px;
+	min-width: 1366px;
+	overflow: hidden;
+	margin: 0 auto;
+	padding-bottom:110px;
+}
+
+/*左边标题样式*/
+.left_title{
+	width:inherit;
+	height: 28px;
+	font-size: 24px;
+	line-height: 28px;
+	color: #000;
+	border-left: 3px solid #e60012;
+	padding-left: 11px;
+	margin-left: 20px;
+	float: left;
+}
+
+.left_title span{
+	display: inline-block;
+	padding-left: 1em;
+	font-size: 12px;
+	color: #747272;
+}
+
+/*右边标题样式*/
+.right_title{
+	width:inherit;
+	height: 28px;
+	font-size: 12px;
+	color: #747272;
+	float: right;
+}
+
+.right_title span{
+	display: inline-block;
+	padding-left: 1em;
+	font-size: 28px;
+	line-height: 28px;
+	color: #000;
+	border-left: 3px solid #e60012;
+	padding-left: 11px;
+	margin-left: 12px;
+}
+
+/*左图右文字的排版*/
+.img_text{
+	position: relative;
+	margin: 0 auto;
+	color: #666;
+}
+
+/*引号定位*/
+.r_left_yinhao{
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	top: 80px;
+	left: 450px;
+	background: url(../img/icon.png) -81px -78px no-repeat;
+}
+
+.r_right_yinhao{
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	bottom: 10px;
+	right: 70px;
+	background: url(../img/icon.png) -81px -104px no-repeat;
+}
+
+.l_left_yinhao{
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	top: 40px;
+	left: 70px;
+	background: url(../img/icon.png) -81px -78px no-repeat;
+}
+
+.l_right_yinhao{
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	bottom: 30px;
+	right: 450px;
+	background: url(../img/icon.png) -81px -104px no-repeat;
+}
+
+/*图片绝对定位*/
+.img_text img{
+	position: absolute;
+	top: 35px;
+	left: 0px;
+	z-index: 1;
+}
+
+/*文字右浮动*/
+.r_text{
+	/*宽高自定义*/
+	position: absolute;
+	right: 0px;
+	top: 50px;
+	overflow: hidden;
+	z-index: 10;
+}
+
+/*标题*/
+.r_text_title{
+	float: right;
+	height: 38px;
+	text-align: center;
+}
+
+/*标题图标*/
+.tubiao_span{
+	display: inline-block;
+	position: relative;
+	width: 36px;
+	height: 38px;
+	background-color: red;
+}
+
+/*标题背景*/
+.tubiao_left_title{
+	display: inline-block;
+	float: right;
+	width: 157px;
+	height: 38px;
+	color: #fff;
+	font-size: 22px;
+	line-height: 38px;
+	background: url(../img/yewu/tubiao.png) left -238px no-repeat;
+}
+
+#tubiao_span1{
+	background: url(../img/yewu/tubiao.png) -7px -2px no-repeat;
+}
+
+#tubiao_span2{
+	background: url(../img/yewu/tubiao.png) -61px -2px no-repeat;
+}
+
+#tubiao_span3{
+	background: url(../img/yewu/tubiao.png) -115px -2px no-repeat;
+}
+
+
+
+.r_text_content{
+	clear: both;
+	margin-top: 100px;
+}
+
+/*中文样式*/
+.r_text_ch{
+	padding-top: 40px;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.r_text_ch:first-letter{
+	font-size: 28px;
+}
+
+/*英文样式*/
+.r_text_en{
+	margin-top: 30px;
+	font-size: 12px;
+	line-height: 24px;
+}
+
+/*了解更多*/
+.link_more{
+	display: block;
+	width: 72px;
+	height: 20px;
+	margin-top: 45px;
+	border: 1px solid #666;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 20px;
+	color: #666;
+}
+
+
+/*左边文字，右边图片*/
+.text_img{
+	position: relative;
+	margin: 0 auto;
+	color: #666;
+}
+
+/*图片绝对定位*/
+.text_img img{
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	z-index: 1;
+}
+
+/*标题背景*/
+.tubiao_right_title{
+	display: inline-block;
+	float: left;
+	width: 157px;
+	height: 38px;
+	color: #fff;
+	font-size: 22px;
+	line-height: 38px;
+	background: url(../img/yewu/tubiao.png) left -282px no-repeat;
+}
+
+#tubiao_span5{
+	background: url(../img/yewu/tubiao.png) -7px -52px no-repeat;
+}
+
+#tubiao_span6{
+	background: url(../img/yewu/tubiao.png) -61px -52px no-repeat;
+}
+
+#tubiao_span7{
+	background: url(../img/yewu/tubiao.png) -115px -52px no-repeat;
+}
+
+#tubiao_span9{
+	background: url(../img/yewu/tubiao.png) -7px -100px no-repeat;
+}
+
+#tubiao_span10{
+	background: url(../img/yewu/tubiao.png) -61px -100px no-repeat;
+}
+
+#tubiao_span11{
+	background: url(../img/yewu/tubiao.png) -115px -100px no-repeat;
+}
+
+#tubiao_span13{
+	background: url(../img/yewu/tubiao.png) -7px -147px no-repeat;
+}
+
+#tubiao_span14{
+	background: url(../img/yewu/tubiao.png) -61px -147px no-repeat;
+}
+
+#tubiao_span15{
+	background: url(../img/yewu/tubiao.png) -115px -147px no-repeat;
+}
+
+#tubiao_span17{
+	background: url(../img/yewu/tubiao.png) -7px -190px no-repeat;
+}
+
+#tubiao_span18{
+	background: url(../img/yewu/tubiao.png) -61px -190px no-repeat;
+}
+
+#tubiao_span19{
+	background: url(../img/yewu/tubiao.png) -115px -190px no-repeat;
+}
+
+/*文字左浮动*/
+.l_text{
+	/*宽高自定义*/
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: hidden;
+	z-index: 10;
+
+}
+
+/*标题*/
+.l_text_title{
+	float: left;
+	height: 38px;
+	text-align: center;
+}
+
+
+.l_text_content{
+	clear: both;
+	margin-top: 100px;
+}
+
+/*中文样式*/
+.l_text_ch{
+	font-size: 14px;
+	line-height: 24px;
+	padding-top: 40px;
+}
+
+.l_text_ch:first-letter{
+	font-size: 28px;
+}
+
+/*英文样式*/
+.l_text_en{
+	margin-top: 30px;
+	font-size: 12px;
+	line-height: 24px;
+}
+
+/*了解更多*/
+.link_more{
+	display: block;
+	width: 72px;
+	height: 20px;
+	border: 1px solid #666;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 20px;
+	color: #666;
+}
