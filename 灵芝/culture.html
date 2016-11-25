@@ -1,0 +1,273 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>企业文化</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<link rel="stylesheet" href="css/clear.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		#culture{
+			width: 1200px;
+			margin: 44px auto 0px;
+			overflow: hidden;
+			background: #09070e url(img/bg1.png) center center no-repeat;
+		}
+
+		#content{
+			overflow: hidden;
+			padding: 30px;
+			color: #333;
+			background-color: #fff;
+		}
+
+		.culture_title,.culture_text{
+			position: relative;
+			border-left: 8px solid #8dc7ce;
+			/*padding-top: 10px;*/
+		}
+
+		.culture_title:before{
+			position: absolute;
+			top: 0px;
+			left: -8px;
+			content: "";
+			display: inline-block;
+			width: 8px;
+			height: 25px;
+			
+/*			background-origin: border-box;*/
+		}
+
+		#first_culture_title:before{
+			height: 12px;
+			background: url(img/icon2.png) 0px 0px no-repeat;
+			z-index: 12;
+		}
+
+		#first_culture_text{
+			border-color: #6f7a92;
+		}
+
+		#second_culture_title:before{
+			background: url(img/icon2.png) -8px 0px no-repeat;
+		}
+
+		#second_culture_text,#second_culture_title{
+			border-color: #8dc7ce;
+		}
+
+		#third_culture_title:before{
+			background: url(img/icon2.png) -16px 0px no-repeat;
+		}
+
+		#third_culture_text,#third_culture_title{
+			border-color: #f6c33b;
+		}
+
+		#forth_culture_title:before{
+			background: url(img/icon2.png) -24px 0px no-repeat;
+		}
+
+		#forth_culture_text,#forth_culture_title{
+			border-color: #ef6b59;
+		}
+
+		
+
+		.culture_title h2{
+			display: block;
+			width: 72px;
+			height: 35px;
+			font-size: 16px;
+			color: #94cad1;
+			line-height: 35px;
+			margin-left: 20px;
+			text-align: center;
+			border: 1px solid #94cad1;
+		}
+
+		#second_culture_title h2{
+			color: #8dc7ce;
+			border-color: #8dc7ce;
+		}
+
+		#third_culture_title h2{
+			color: #f6c33b;
+			border-color: #f6c33b;
+		}
+
+		#forth_culture_title h2{
+			color: #ef6b59;
+			border-color: #ef6b59;
+		}
+
+
+		.culture_title:after{
+			position: absolute;
+			top: 20px;
+			left: 0px;
+			content: "";
+			display: inline-block;
+			width: 20px;
+			height: 2px;
+			background-color: #94cad1; 
+		}
+
+		#first_culture_title:after{
+			display: none;
+		}
+
+		#second_culture_title:after{
+			background-color: #8dc7ce;
+			/*border-color: #8dc7ce;*/
+		}
+
+		#third_culture_title:after{
+			background-color: #f6c33b;
+			/*border-color: #f6c33b;*/
+		}
+
+		#forth_culture_title:after{
+			background-color: #ef6b59;
+			/*border-color: #ef6b59;*/
+		}
+
+		.culture_text{
+			padding: 30px 0px;
+		}
+
+/*		.culture_text:before{
+			content: "";
+			display: inline-block;
+			width: 8px;
+			height: 100px;
+			background-color:#8dc7ce;
+		}*/
+
+		.culture_bottom{
+			position: relative;
+		}
+
+
+		/*最后一个*/
+		.culture_bottom:before{
+			position: absolute;
+			content: "";
+			display: inline-block;
+			width: 8px;
+			height: 10px;
+			top: 0px;
+			left: 0px;
+			background: url(img/icon2.png) 0px -15px no-repeat;
+		}
+
+
+		.culture_list p{
+			margin-left: 20px;
+			font-size: 16px;
+			line-height: 24px;
+		}
+
+		.culture_list h3{
+			font-weight: bolder;
+			padding: 20px 0px 12px 20px;
+		}
+	</style>
+</head>
+<body>
+	<!-- 导航栏 -->
+	<div class="head">
+		<a class="logo"chref="#"><img src="img/shouye/logo.png" alt="" ></a>
+		<ul class="nav">
+			<li class="nav_list"><a href="#">首页</a></li>
+			<li class="nav_list"><a href="#">灵芝知识</a></li>
+			<li class="nav_list"><a href="#">公司简介</a></li>
+			<li class="nav_list"><a href="#">灵芝文化</a></li>
+			<li class="nav_list"><a href="#">产业园区、养生谷</a></li>
+			<li class="nav_list"><a href="#">人力资源</a></li>
+			<li class="nav_list"><a href="#">新闻中心</a></li>
+			<li class="nav_list"><a href="#">产品展示</a></li>
+			<li class="nav_list"><a href="#">联系方式</a></li>
+			<li class="nav_list"><a href="#">请您留言</a></li>
+			<li class="nav_list"><span class="find_img"></span><input class="find" type="text" name="" value=""></li>
+		</ul>
+	</div>
+
+	<div id="culture">
+		<h3 class="title">企业文化</h3>
+		<div id="content">
+
+			<div class="culture_list">
+				<div class="culture_title" id="first_culture_title">
+					<!-- <h2>使命宣言</h2> -->
+				</div>
+				<div class="culture_text" id="first_culture_text">
+					<p>我们深知：企业是由人组合而成，并且这群人必须有共同的目标才能凝聚成一股使命感和向心力，这正是现代企业的灵魂。每一个表现卓越的企业，都有一套强劲的企业文化在指引企业的成长。没有文化，企业也可以实现成长，但没有文化的企业实现不了可持续成长。</p>
+				</div>
+				<!-- <div class="culture_bottom"></div> -->
+			</div>
+
+			<div class="culture_list">
+				<div class="culture_title" id="second_culture_title">
+					<h2>使命宣言</h2>
+				</div>
+				<div class="culture_text" id="second_culture_text">
+					<p>弘扬古老的泰山和灵芝文化，开创灵芝养生新纪元。以我们一流的组织和100%纯天然的产品，长期造福消费者、客户、员工及股东。</p>
+				</div>
+				<!-- <div class="culture_bottom"></div> -->
+			</div>
+
+			<div class="culture_list">
+				<div class="culture_title" id="third_culture_title">
+					<h2>公司愿景</h2>
+				</div>
+				<div class="culture_text" id="third_culture_text">
+					<p>实现公司规范化、现代化、标准化管理，市场覆盖国内各大、中城市，三年内成为国内最大的灵芝产品加工基地，让“中信”成为消费者的首选品牌。实现公司内外和谐发展，把公司铸就成一个家庭、一所学校、一支军队。</p>
+					<p>2020年成为国际化的卓越的上市企业。</p>
+					<p>持续以高新技术为先导，以高品质的产品和服务，成为保健品行业的一颗璀璨明珠。</p>
+				</div>
+				<!-- <div class="culture_bottom"></div> -->
+			</div>
+
+			<div class="culture_list">
+				<div class="culture_title" id="forth_culture_title">
+					<h2>企业理念</h2>
+				</div>
+				<div class="culture_text" id="forth_culture_text">
+					<h3>经营理念</h3>
+					<p>我们致力于制造和销售健康自然的产品，以增进大众健康。“精细管理、追求完美”，我们认为企业的发展依赖于企业严格的管理，管理方法无高低之分，关键是做精做细。</p>
+
+					<h3>客户理念</h3>
+					<p>“诚信、平等、服务、共荣”。我们相信，公司过去、现在与未来的成功，都源自我们对顾客提供最好的服务。公司经营的唯一理由是满足消费者与顾客的需要，消费者与顾客就是我们的主人，我们必须为他服务。</p>
+
+					<h3>人才理念</h3>
+					<p>尊重人、关心人、培育人、留住人。我们认为，人力资源比物质资源更重要；用好人才比选择人才更关键；精神激励比物质激励更重要；留住人才就是盘活企业资产。</p>
+
+					<h3>质量理念</h3>
+					<p>“用心、细心、精心，品质永保放心”。百年基业，质量为先，品质成就未来。我们认为质量管理应该从每个员工的“心”开始，质量在我手中，企业的未来在我手中，绝不从我手中放过一丝一毫的质量隐患。</p>
+
+					<h3>职业化理念</h3>
+					<p>精于此道，以此为生，做好你该做的事。“正人先正己，做事先做人”， 我们需要和喜欢让组织放心的员工。职业化是每一名员工生存和发展的价值与理由。投身中信灵芝就要尊重企业文化、珍惜职业机会，将个人目标融入企业目标，将小我融入大我，视岗位为舞台，用优异的表演体现个人价值、创造企业价值。</p>
+				</div>
+				<div class="culture_bottom"></div>
+			</div>
+
+		</div>
+	</div>
+
+
+	<!-- 底部内容 -->
+	<div class="foot">
+		<ul class="foot_nav">
+			<li class="foot_list"><a href="#">首页</a></li>
+			<li class="foot_list"><a href="#">收藏本站</a></li>
+			<li class="foot_list"><a href="#">设为首页</a></li>
+			<li class="foot_list"><a href="#">联系我们</a></li>
+			<li class="foot_list"><a href="#">管理入口</a></li>
+			<li class="foot_list" style="padding-left:20px;">Copyright©All Rights Reserved.中信生物科技。鲁ICP备05055618号。山东中信生物科技有限公司山东省泰安高新区配天门大街2099号</li>
+		</ul>
+	</div>
+</body>
+</html>

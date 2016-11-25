@@ -1,0 +1,220 @@
+*{
+	font-size: 14px;
+}
+
+a:link {color:#fff;}/* 未被访问的链接 */
+
+a:visited {color:#ccc;}/* 已被访问的链接 */
+
+a:hover {color:#FF00FF !important;}/* 鼠标指针移动到链接上 */
+
+a:active {color:#0000FF !important;}/* 正在被点击的链接 */
+
+.head{
+	position: fixed;
+	top: 0px;
+	left: 50%;
+	width: 1200px;
+	height: 44px;
+	margin-left: -600px;
+	background-color: #010102;
+	z-index: 10000;
+}
+
+/*logo*/
+.logo{
+	position: absolute;
+	top: 50%;
+	left: 20px;
+	margin-top: -12px;
+}
+
+/*导航列表*/
+.nav{
+	float: right;
+	overflow: hidden;
+}
+
+.nav_list{
+	float: left;
+	padding: 0px 15px;
+	line-height: 44px;
+}
+
+/*搜索图片*/
+.find_img{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-top: 14px;
+	background: url(../img/find.png);
+}
+
+/*搜索框出现*/
+.nav_list:hover .find{
+	visibility: visible;
+	background-color: #ccc;
+}
+
+/*搜索框*/
+.find{
+    visibility: hidden;
+	float: left;
+	width: 150px !important;
+	height: 24px !important;
+	margin-top: 10px !important;
+	margin-right: 10px !important;
+	border: 1px solid #fff !important;
+	text-indent: 1em !important;
+}
+
+/*内容*/
+.contain{
+	width: 1200px;
+	margin: 0 auto;
+}
+
+
+/*底部链接*/
+.foot{
+	width: 1200px;
+	height: 78px;
+	margin: 0 auto;
+	color: #999;
+	background-color: #f4f4f4;
+/*	margin-top: 100px;*/
+}
+
+/*底部链接列表*/
+.foot_nav{
+	float: right;
+	margin-right: -8px;
+	margin-left: -8px;
+	overflow: hidden;
+}
+
+/*链接颜色*/
+.foot_nav a{
+	color: #666;
+}
+
+/*链接列表*/
+.foot_list{
+	float: left;
+	padding: 0px 8px;
+	line-height: 78px;
+}
+
+/*标题样式一*/
+.title{
+	font-size: 14px;
+	color: #fff;
+	padding-top: 28px;
+	padding-bottom: 16px;
+	padding-left: 20px;
+	border-bottom: 2px solid #141120;
+}
+
+/*标题样式一*/
+.title2{
+	font-size: 20px;
+	color: #fff;
+	width: 105px;
+	height: 35px;
+	padding-left: 10px;
+	line-height: 35px;
+	background-color: #cb00da;
+}
+
+/*分页显示*/
+.page_num{
+	float: right;
+	padding-top: 26px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+.page_num a{
+	color: #333;
+}
+
+.page_num span{
+	display: inline-block;
+	float: left;
+	height: 22px;
+	padding: 0px 15px;
+	margin-left: 3px;
+	color: #fff;
+	font-size: 10px;
+	line-height: 22px;
+}
+
+.page_num input{
+	display: inline-block;
+	float: left;
+	width: 36px;
+	height: 22px;
+	margin-left: 3px;
+	color: #000;
+	font-size: 10px;
+	line-height: 22px;
+	text-align: center;
+	background-color: #fff;
+	border: 1px solid #bebdbf;
+}
+
+.page_num_list{
+	display: inline-block;
+	float: left;
+	height: 22px;
+	padding: 0px 15px;
+	margin-left: 3px;
+/*	color: red;*/
+	font-size: 10px;
+	line-height: 22px;
+	border: 1px solid #bebdbf;
+	background-color: #ebebeb;
+}
+
+.page_num_list:hover{
+	background-color: #7b2783;
+	border-color: #7b2783;
+}
+
+/*当前页*/
+.current_page{
+	background-color: #7b2783;
+	border-color: #7b2783;
+}
+
+
+.new_list{
+	padding: 16px 14px 20px;
+	width: 541px;
+	margin-bottom: 15px;
+	background-color: #fff;
+	border: 1px solid #ceced0;
+}
+
+.new_list img{
+	float: left;
+	margin-right: 14px;
+}
+
+.news_list_title{
+	color: #333;
+	padding-top: 5px;
+	padding-bottom: 14px;
+}
+.news_text{
+	/*padding-left: 14px;*/
+	font-size: 10px;
+	line-height: 16px;
+}
+.news_time{
+	float: right;
+	font-size: 10px;
+}
+.news_time{
+	padding: 0px 10px;
+}
